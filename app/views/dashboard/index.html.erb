@@ -1,2 +1,10 @@
 <h1>Welcome to Dashboard</h1>
 <h2> Rails version <%= Rails.version %></h2>
+<%= current_user.email %>
+<section>
+  <p>
+    Welcome to Shine Future Dashboard
+  </p>
+</section>
+
+<%= link_to "Logout",destroy_user_session_path, method: :delete %>
