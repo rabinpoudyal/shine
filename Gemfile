@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'foreman'
 #Install Devise for authentication
 gem 'devise'
+#Install faker to generate random data
+gem 'faker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
