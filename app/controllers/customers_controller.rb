@@ -13,6 +13,13 @@ class CustomersController < ApplicationController
                                   customer_search_term.where_clause,
                                   customer_search_term.where_args
       ).order(customer_search_term.order).offset(PAGE_SIZE * @page).limit(PAGE_SIZE)
+
+      respond_to do |format|
+        format.html {}
+        format.json {
+        render json: { customers: @customers }
+        }
+      end
     else
       @customers = []
     end
